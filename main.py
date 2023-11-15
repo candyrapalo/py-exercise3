@@ -13,6 +13,8 @@ def guess_the_number():
     messages: Too low, Too high, Try again, Congratulations!
   """
   # fix code
+  random.randint
+  input("")
   print("Guess the number (1-10):")
 
 
