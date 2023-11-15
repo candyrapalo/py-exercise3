@@ -11,27 +11,22 @@ def guess_the_number():
     Using loops, implement a guessing game.
     Guess the number (1-10):
     messages: Too low, Too high, Try again, Congratulations!
-    """
-    # Generate a random number between 1 and 10
-    secret_number = random.randint(1, 10)
+  """
+  # fix code
+  while True:
+    guess = int(input("introduce tu numero: "))
+    target = random.randint(1, 10)
+    
+    if guess == target:
+      print("has adivinado el numero")
+    else:
+      print(f"Sigue intentadolo (guess {target})")
+      continue
+    break
 
-    while True:
-        # Get user input
-        guess = int(input("Enter your guess (1-10): "))
+  
 
-        # Check if the guess is correct
-        if guess == secret_number:
-            print("Congratulations! You guessed the correct number.")
-            break
-        elif guess < secret_number:
-            print("Too low. Try again.")
-        else:
-            print("Too high. Try again.")
-
-# Call the function to start the game
-guess_the_number()
-
-
+ 
 
 
 def multiplication_table():
