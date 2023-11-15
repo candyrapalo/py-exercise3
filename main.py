@@ -7,7 +7,7 @@ Exercise 3: Basic calculator
 import random
 
 def guess_the_number():
-    """
+  """
     Using loops, implement a guessing game.
     Guess the number (1-10):
     messages: Too low, Too high, Try again, Congratulations!
@@ -54,11 +54,18 @@ def basic_calculator():
   num1 = input("Enter the first number: ")
   operator = input("Enter an operator (+, -, *, /): ")
   num2 = input("Enter the second number: ")
-
-  result = None # fix code
-
+  if(operator=="+"):
+      result=num1+num2
+  if (operator=="-"):
+      result=num1-num2
+  if(operator=="*"):
+     result=num1*num2
+  else:
+     result=num1/num2       
+  
   print("{num1} {operator} {num2} => Result:", result)
 
+ 
 
 def main():
   # input choice between 1-3 function
