@@ -13,26 +13,24 @@ def guess_the_number():
     messages: Too low, Too high, Try again, Congratulations!
   """
   # fix code
-  random.randint
-  input("intruduzca un numero")
+secret_number = random.randint(1, 10)
 
-    
-  num = random.randint(1, 10)
-  target = 5
-   
-    
-  while attempts > 0 and not guessed:
-        guess = int(input("Make a guess: "))
-        attempts -= 1
-        
-        if guess == num:
-            guessed = True
-            print("Congratulations! You guessed the number!")
-        elif guess < num:
-            print("Too low!")
+while True:
+        # Get user input for a guess
+        guess = int(input("Guess the number (1-10): "))
+
+        # Check if the guess is correct
+        if guess == secret_number:
+            print("Congratulations! You guessed the correct number.")
+            break
+        elif guess < secret_number:
+            print("Too low. Try again.")
         else:
-            print("Too high!")
-
+            print("Too high. Try again.")
+  
+ 
+   
+  
 
 
 def multiplication_table():
