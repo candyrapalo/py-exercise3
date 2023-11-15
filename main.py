@@ -27,11 +27,17 @@ while True:
             print("Too low. Try again.")
         else:
             print("Too high. Try again.")
-  
- 
-   
-  
 
+#  while True:
+  #  guess = int(input("introduce tu numero: "))
+  #  target = random.randint(1, 10)
+    
+   # if guess == target:
+   #   print("has adivinado el numero")
+   #else:
+   #   print(f"Sigue intentadolo (guess {target})")
+     # continue
+    #break
 
 def multiplication_table():
   """
@@ -39,7 +45,9 @@ def multiplication_table():
   """
   # fix code
   print("multiplication_table for {number}")
-
+  for i in range(1, 11):
+    for j in range(1, 11):
+        print(f"{i} * {j} = {i * j}")
 
 def basic_calculator():
   """
