@@ -14,8 +14,25 @@ def guess_the_number():
   """
   # fix code
   random.randint
-  input("")
-  print("Guess the number (1-10):")
+  input("intruduzca un numero")
+
+    
+  num = random.randint(1, 10)
+  target = 5
+   
+    
+  while attempts > 0 and not guessed:
+        guess = int(input("Make a guess: "))
+        attempts -= 1
+        
+        if guess == num:
+            guessed = True
+            print("Congratulations! You guessed the number!")
+        elif guess < num:
+            print("Too low!")
+        else:
+            print("Too high!")
+
 
 
 def multiplication_table():
