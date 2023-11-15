@@ -13,8 +13,20 @@ def guess_the_number():
     messages: Too low, Too high, Try again, Congratulations!
   """
   # fix code
-  int(input("introduce tu numero: "))
-  print("Guess the number (1-10):")
+  while True:
+    guess = int(input("introduce tu numero: "))
+    target = random.randint(1, 10)
+    
+    if guess == target:
+      print("has adivinado el numero")
+    else:
+      print(f"Sigue intentadolo (guess {target})")
+      continue
+    break
+
+  
+
+ 
 
 
 def multiplication_table():
