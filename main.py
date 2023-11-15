@@ -13,6 +13,7 @@ def guess_the_number():
     messages: Too low, Too high, Try again, Congratulations!
   """
   # fix code
+  int(input("introduce tu numero: "))
   print("Guess the number (1-10):")
 
 
